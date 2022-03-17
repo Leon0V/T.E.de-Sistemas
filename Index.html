@@ -8,5 +8,22 @@
 </head>
 <body>
     <p>Index</p>
+    <button>Click Here</button>
 </body>
+
+<script>
+// O JavaScript fica aqui
+ function criarParagrafo() {
+      let para = document.createElement('p');
+      para.textContent = 'AAAAAAAAAAAAAAAAAAAAAAH!';
+      document.body.appendChild(para);
+    }
+    const botoes = document.querySelectorAll('button');
+    for(var i = 0; i < botoes.length ; i++) {
+      botoes[i].addEventListener('click', criarParagrafo);
+    }
+
+    
+</script>
+
 </html>
